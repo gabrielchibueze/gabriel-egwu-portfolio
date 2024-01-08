@@ -674,7 +674,7 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 .view-more-projects{
-  margin:  0 auto;
+  margin:  8rem auto 0px auto;
 }
 
 @media(max-width: 900px) {
