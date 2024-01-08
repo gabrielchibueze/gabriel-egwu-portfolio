@@ -2,7 +2,7 @@
 import github from './images/github.svg'
 
 import NedgabConsults from './project-images/nedgabconsults1.jpg'
-import VanLife from './project-images/vanLife1.jpg'
+import VanLife from './project-images/vanlife1.jpg'
 import NoteApp from './project-images/noteapp1.jpg'
 import GameofTenzies from './project-images/gameoftenzies1.jpg'
 import PersonalDashboard from './project-images/personaldashboard1.jpg'
