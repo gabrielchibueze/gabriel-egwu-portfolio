@@ -48,7 +48,7 @@ export default function Home (){
           <span>Gabriel Egwu</span>
         </h1>
         {/* Put a small paragraph about yourself*/}
-        <p>A Front-End Developer based in London, UK
+        <p>A Front-End Developer based in Newcastle, UK
         </p>
         <Link to="contact" className="btn btn--pink">Get in touch</Link>
       </div>
