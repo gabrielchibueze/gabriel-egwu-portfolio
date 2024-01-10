@@ -382,7 +382,7 @@ body:not(.user-is-tabbing) a:focus {
   padding: 0px 0rem;
 }
 
-@media(max-width: 500px){
+@media(max-width: 450px){
   .nav__items{
     overflow-x: scroll;
   }
@@ -480,7 +480,7 @@ body:not(.user-is-tabbing) a:focus {
 
 .header__text {
   /* position: absolute; */
-  margin-top: 150px;
+  margin-top: 60px;
   /* transform: translateY(-50%); */
   background: linear-gradient(rgba(0,0,0, .1), rgba(0,0,0, .4)), 
   url('./images/header.jpg');
