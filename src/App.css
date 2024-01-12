@@ -966,7 +966,7 @@ body:not(.user-is-tabbing) a:focus {
   }
 }
 
-ul{
+.experience>ul, .skills-section>ul, .myprojects-section > ul {
   margin-left: 2rem;
   font-size: 1.7rem;
 }
