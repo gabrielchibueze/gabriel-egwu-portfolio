@@ -56,10 +56,10 @@ console.log(projectsList)
                 <div className="row">
                     <h3>You can view the source code of this my personal portfolio on my Github repositories</h3>
                     <div className="work__links">
-                    <Link to="" target="_blank" className="link__text">
-                     Visit Site <span>&rarr;</span>
+                    <Link to="https://github.com/gabrielchibueze/gabriel-egwu-portfolio" target="_blank" className="link__text">
+                     See my repo on Github <span>&rarr;</span>
                     </Link>
-                    <Link to="" title="View Source Code" target="_blank">
+                    <Link to="https://github.com/gabrielchibueze/gabriel-egwu-portfolio" title="View Source Code" target="_blank">
                     <img src={github} className="work__code" alt="GitHub"/>
                     </Link>
                     </div>

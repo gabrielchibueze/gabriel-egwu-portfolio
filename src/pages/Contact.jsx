@@ -15,11 +15,11 @@ export default function Contact(){
                     </div>
                     <div className="contact-details">
                         <h3>Phone:</h3>
-                        <h3> +447444388706</h3>
+                        <h3> +447444388707</h3>
                     </div>
                     <div className="contact-details">
                         <h3>Email:</h3>     
-                        <Link to="mailto:gabrielchibu@gmail.com" target="_blank"> <h3> gabrielchibu@gmail.com</h3></Link>
+                        <Link to="mailto:gabrielchibu@gmail.com" target="_blank"> <h3> Click to email me</h3></Link>
                     </div>
                 </div>
             </section>

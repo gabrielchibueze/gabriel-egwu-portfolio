@@ -6,6 +6,7 @@ import Projects from './pages/Projects'
 import Blog from './pages/Blog'
 import About from './pages/About'
 import Contact from './pages/Contact'
+// import Resume from './pages/resume'
 import './App.css'
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
           <Route path='projects' element={<Projects/>}/>
           <Route path='blog' element={<Blog/>}/>
           <Route path='contact' element={<Contact/>}/>
+          {/* <Route path='resume' element={<Resume />} /> */}
         </Route>
       </Routes>
     </BrowserRouter>

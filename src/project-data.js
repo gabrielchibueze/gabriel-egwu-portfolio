@@ -11,21 +11,7 @@ import QuizzicalApp from './project-images/quizzical1.jpg'
 import LeadGenerator from './project-images/leadgenerator1.jpg'
 
 const projectsList = [
-    {
-        title: "Explore VanLife Project",
-        description: "The Explore VanLife project is a self-project I adventured on. Learning the ropes of frontend development involves being on stack with recent trends in the industry. This web app allows users to rent, post and explore different van life option for either holidays or just another caravan journey.",
-        tools: [
-            "HTML",
-            "CSS",
-            "JavaScript",
-            "React",
-            "Google cloud firestore",
-        ],
-        projectlink: "https://explore-van-life.netlify.app/",
-        githublink: "https://github.com/gabrielchibueze/Explore-Van-Life",
-        githubicon: github,
-        projectimage: VanLife,
-    },
+
     {
         title: "Nedgab Consults Website",
         description: "Nedgab Consults is an education consulting firm. I was part of the team that developed the website. The website allows users to sign up to study abroad news and updates and apply for consultations for guidance towards immigration and study abroad purposes.",
@@ -40,6 +26,21 @@ const projectsList = [
         githublink: "https://github.com/gabrielchibueze/nedgab-consults-website",
         githubicon: github,
         projectimage: NedgabConsults,
+    },
+    {
+        title: "Explore VanLife Project",
+        description: "The Explore VanLife project is a self-project I adventured on. Learning the ropes of frontend development involves being on stack with recent trends in the industry. This web app allows users to rent, post and explore different van life option for either holidays or just another caravan journey.",
+        tools: [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "React",
+            "Google cloud firestore",
+        ],
+        projectlink: "https://explore-van-life.netlify.app/",
+        githublink: "https://github.com/gabrielchibueze/Explore-Van-Life",
+        githubicon: github,
+        projectimage: VanLife,
     },
     {
         title: "Note App",

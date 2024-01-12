@@ -81,6 +81,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   height: 100vh;
+  position: relative;
   /* border-bottom: var(--border-light); */
 
 }
@@ -897,3 +898,164 @@ body:not(.user-is-tabbing) a:focus {
   flex-direction: column;
   align-items: center;
 }
+
+/* Resume Section */
+.myresume{
+  position: absolute;
+  top: 3700px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  z-index: 5;
+  background-color: rgba(8, 8, 8, 0.993);
+  height: 100vh;
+}
+.resume-section{
+  left: 0;
+  right: 0;
+  z-index: 5;
+  max-width: 900px;
+  padding: 4.5rem;
+  margin: 0rem auto 5rem auto;
+  background-color: white;
+  color: black;
+  min-height: 100rem;
+  overflow-y: scroll;
+  border-radius: 1rem;
+}
+
+.resume-section > h1, .resume-section > h3, .work-expereiences-section >h1, 
+.experience >h3, .objectives-section > h1, .education-section > h1, .myprojects-section >h1, .myprojects-section > h3, .skills-section > h1 {
+  color: black;
+}
+.resume-section > h1{
+  font-weight: bolder;
+  font-size: 5rem;
+  padding: 0px;
+  margin: 0.5rem;
+}
+
+.objectives-section >h1, .myprojects-section>h1, .work-expereiences-section > h1, .skills-section >h1, .education-section >h1{
+  border-bottom: solid black 5px;
+  max-width: fit-content;
+  padding-right: 5rem;
+  font-weight: bolder;
+}
+.experience{
+  margin-bottom: 3rem;
+}
+
+.education-skills{
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
+
+
+@media(min-width: 600px){
+  .education-skills{
+    flex-direction: row;
+    gap: 6rem;
+  }
+  .education-section{
+    width: 65%;
+  }
+  .skills-section{
+    width: 40%;
+  }
+}
+
+ul{
+  margin-left: 2rem;
+  font-size: 1.7rem;
+}
+
+.duration-section{
+  display: flex;
+  gap: 4rem;
+}
+.duration-section >p, .myprojects-section>p{
+  margin: 0.5rem 0rem 0.5rem 0px ;
+  font-size: 1.5rem;
+}
+.experience > h2:after, .resume-section > h2::after, .myprojects-section >h2:after, .education1>h2::after, .education2>h2::after {
+  text-decoration: none;
+  color: black;
+  background: none;
+  text-decoration: none;
+}
+.resume-section > h2, .myprojects-section >h2, .education1>h2, .education2>h2{
+  color: black;
+  margin: 0px;
+  font-size: 2.7rem;
+  font-weight: bold;
+  height: 35px;
+  font-weight: normal;
+}
+.experience > h2{
+  color: black;
+  margin: 0px;
+  font-size: 2.7rem;
+  font-weight: bold;
+  height: 55px;
+  font-weight: normal;
+}
+
+.experience > h3, .resume-section > h3, .myprojects-section >h3, .education1>h3, .education2>h3 {
+  color: black;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  font-size: 2.3rem;
+  font-weight: bold;
+  padding: 0px;
+}
+
+.education1>p, .education2>p {
+  color: black;
+  margin: 0px;
+  padding: 0px;
+  font-size: 2rem;
+}
+
+.education1,.education2{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3rem;
+  gap: 0px;
+}
+.experience > h3, .resume-section > h3, .myprojects-section >h3, .education1>h3, .education2>h3, .resume-section >h2 {
+  color: rgba(38, 8, 122, 0.945);
+  font-weight: normal;
+
+}
+
+
+.education1>h2, .education2>h2, .education1>h3, .education2>h3  {
+  font-weight: normal;
+}
+
+.resume-btn {
+  cursor: pointer;
+}
+.resume-close-btn{
+ display: flex;
+ justify-content: flex-end;
+ margin-bottom: 3rem;
+
+}
+
+.close-resume-btn{
+  background-color: white;
+  font-size: 1.7rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  margin-left: auto;
+  border: 1px solid rgb(192, 190, 190);
+  padding-bottom: 0.5rem;
+}
+.close-resume-btn:hover {
+  font-size: 1.6rem;
+}
+

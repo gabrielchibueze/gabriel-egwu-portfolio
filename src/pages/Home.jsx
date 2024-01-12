@@ -1,12 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import Gabby1 from '../main-images/gabby1.jpeg';
 import projectsList from "../project-data";
+// import resume from "../resume";
+import Resume from './resume'
 
 import {Link} from 'react-router-dom'
 
 
 export default function Home (){
+    const [resumeIsActive, setResumeIsActive] = useState(false)
 
+    const toggleResume =()=>{
+        setResumeIsActive(prevValue => !prevValue)
+    }
+    const toggleResumeOnWIndows =()=>{
+        setResumeIsActive(false)
+    }
+   
     const recentProjects = projectsList.map((project, index) =>{
         return (
             <div className="work__box" key={index + 1}>
@@ -42,7 +52,7 @@ export default function Home (){
     return (
     <div>
     
-    <div className="header__text-box row">
+    <div className="header__text-box row" onClick={toggleResumeOnWIndows}>
       <div className="header__text">
         <h1 className="heading-primary">
           <span>Gabriel Egwu</span>
@@ -55,7 +65,7 @@ export default function Home (){
     </div>
     <main role="main">
 
-    <section className="work" id="work">
+    <section className="work" id="work" onClick={toggleResumeOnWIndows}>
     <div className="row">
         <h2>My Work</h2>
         <div className="work__boxes">
@@ -69,7 +79,7 @@ export default function Home (){
     </section>
 
  
-        <section className="client" id="clients">
+        <section className="client" id="clients" onClick={toggleResumeOnWIndows}>
         <div className="row">
             <h2>Skills</h2>
             <div className="client__logos">
@@ -81,34 +91,34 @@ export default function Home (){
                 <h4 className="client__logo">Agile</h4>
                 <h4 className="client__logo">Git Version Control</h4>
                 <h4 className="client__logo">UI/UX design</h4>
-                <h4 className="client__logo">Responsive web desig</h4>
+                <h4 className="client__logo">Responsive web design</h4>
             </div>
         </div>
         </section>
 
         <section className="about" id="about">
-        <div className="row">
+        <div className="row" >
             <h2>About Me</h2>
             <div className="about__content">
             <div className="about__text">
-            <p>I'm a web developer and designer based in Newcastle, United Kingdom. I love building apps that solve real-world problems, and that are delightful to use. My specialities include JavaScript, React JS, Tailwind CSS, and Styled Components.</p>
-                <p>I have  background in teaching and marketing, and I have a Masters Degree in Engineering Management from Northumbria University Newcastle.</p>
-                <Link to="#" className="btn">My Resume</Link>
-            </div>
+                <p>I'm a web developer and designer based in Newcastle, United Kingdom. I love building apps that solve real-world problems, and that are delightful to use. My specialities include JavaScript, React JS, Tailwind CSS, and Styled Components.</p>
+                    <p>I have  background in teaching and marketing, and I have a Masters Degree in Engineering Management from Northumbria University Newcastle.</p>
+                    <div className="btn resume-btn" title="View my resume" onClick={toggleResume}>My Resume</div>
+                </div>
 
-            <div className="about__photo-container">
-                <img className="about__photo" src={Gabby1} alt="" />
-            </div>
+                <div className="about__photo-container">
+                    <img className="about__photo" src={Gabby1} alt="" />
+                </div>
             </div>
         </div>
-        <div>
-            {/* <iframe src="../images/jane.jpg" width="80%" height="600px" title="Your CV" /> */}
-        </div>
+        {resumeIsActive && <div className="myresume">
+            <Resume resumeIsActive={resumeIsActive} toggleResume={toggleResume}/>
+        </div>}
         </section>
         </main>
 
 
-        <section className="contact" id="contact">
+        <section className="contact" id="contact" onClick={toggleResumeOnWIndows}>
         <div className="row">
         <h2>Get in Touch</h2>
         <div className="contact__info">
